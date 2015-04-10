@@ -186,7 +186,7 @@ the table declaration can be as follows:
 CREATE EXTERNAL TABLE json (data STRING<1>)
 STORED BY 'org.elasticsearch.hadoop.hive.EsStorageHandler'
 TBLPROPERTIES('es.resource' = 'my-collection/{media_type}'<2>,
-              'es.input.json` = 'yes');
+              'es.input.json' = 'yes');
 ----
 
 <1> Schema declaration for the table. Since JSON input is used, the schema is simply a holder to the raw data
